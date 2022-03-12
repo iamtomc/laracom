@@ -10,7 +10,6 @@ cache:
     - $HOME/.composer/cache
 
 before_script:
-  - cd project
   - cp .env.testing .env
   - composer install --no-interaction
   - composer dump-autoload
